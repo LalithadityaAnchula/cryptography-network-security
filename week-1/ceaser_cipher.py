@@ -23,7 +23,7 @@ class CeaserCipher:
 
 if __name__ == "__main__":
     message = 'lalithadityaanchula'
-    key = 2
+    key = int(input('Enter key: '))
     encryptedMsg = CeaserCipher().encrypt(message, key)
     decryptedMsg = CeaserCipher().decrypt(encryptedMsg, key)
     print(f'key :{key} ,message : {message}')
